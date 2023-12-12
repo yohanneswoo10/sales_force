@@ -4,6 +4,7 @@
  "autoname": "naming_series:",
  "creation": "2023-12-12 16:51:40.887663",
  "default_view": "List",
+ "description": "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",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -15,6 +16,7 @@
   "column_break_0rmu9",
   "no_polisi",
   "driver",
+  "column_break_bipeq",
   "nama_sales",
   "rute",
   "mobil",
@@ -100,12 +102,16 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "column_break_bipeq",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-12-12 17:10:09.170460",
+ "modified": "2023-12-12 17:12:45.285962",
  "modified_by": "Administrator",
  "module": "Sales Force",
  "name": "BPPB",
