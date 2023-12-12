@@ -1,0 +1,239 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-07 12:25:43.397398",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_98ogb",
+  "lead",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "company_name",
+  "column_break_rascw",
+  "customer",
+  "customer_name",
+  "from_lead",
+  "location_section",
+  "show_location",
+  "latitude",
+  "longitude",
+  "column_break_yajgo",
+  "check_in",
+  "check_in_date",
+  "column_break_4bksl",
+  "check_out",
+  "check_out_date",
+  "keterangan_section",
+  "keterangan",
+  "tab_break_8ua5o",
+  "duration",
+  "sales_person",
+  "data_origin_column",
+  "latitude_data",
+  "longitude_data",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CRM-TRK-.YYYY.-"
+  },
+  {
+   "fieldname": "section_break_98ogb",
+   "fieldtype": "Section Break",
+   "label": "Lead / Customer"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead"
+  },
+  {
+   "fetch_from": "lead.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "lead.middle_name",
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fetch_from": "lead.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fetch_from": "lead.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_rascw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fetch_from": "customer.lead_name",
+   "fieldname": "from_lead",
+   "fieldtype": "Data",
+   "label": "From Lead"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude",
+   "read_only": 1
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yajgo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check_in",
+   "fieldtype": "Button",
+   "label": "Masuk"
+  },
+  {
+   "fieldname": "column_break_4bksl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Button",
+   "label": "Keluar"
+  },
+  {
+   "fieldname": "tab_break_8ua5o",
+   "fieldtype": "Tab Break",
+   "label": "Others"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Data",
+   "label": "Sales Person"
+  },
+  {
+   "fieldname": "check_in_date",
+   "fieldtype": "Datetime",
+   "label": "Date Check In",
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_out_date",
+   "fieldtype": "Datetime",
+   "label": "Date Check Out",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales Force Tracking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "keterangan_section",
+   "fieldtype": "Section Break",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Long Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "show_location",
+   "fieldtype": "Button",
+   "label": "Show Location"
+  },
+  {
+   "fieldname": "data_origin_column",
+   "fieldtype": "Column Break",
+   "label": "Data Origin"
+  },
+  {
+   "fieldname": "latitude_data",
+   "fieldtype": "Data",
+   "label": "Latitude Data"
+  },
+  {
+   "fieldname": "longitude_data",
+   "fieldtype": "Data",
+   "label": "Longitude Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-08 08:41:57.608329",
+ "modified_by": "Administrator",
+ "module": "Sales Force",
+ "name": "Sales Force Tracking",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
