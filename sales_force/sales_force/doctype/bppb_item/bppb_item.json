@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-12 16:53:24.823226",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "column_break_fx4is",
+  "qty",
+  "uom",
+  "stock_availability_section",
+  "ranah",
+  "bypass",
+  "column_break_p3cfm",
+  "canter",
+  "grandmax",
+  "stock_list",
+  "quantity_calculation_section",
+  "quantity_terjual",
+  "column_break_9mm6q",
+  "quantity_sisa"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "column_break_fx4is",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "stock_availability_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Availability"
+  },
+  {
+   "fieldname": "ranah",
+   "fieldtype": "Int",
+   "label": "Ranah"
+  },
+  {
+   "fieldname": "bypass",
+   "fieldtype": "Int",
+   "label": "ByPass"
+  },
+  {
+   "fieldname": "column_break_p3cfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "canter",
+   "fieldtype": "Int",
+   "label": "Canter"
+  },
+  {
+   "fieldname": "grandmax",
+   "fieldtype": "Int",
+   "label": "GrandMax"
+  },
+  {
+   "fieldname": "stock_list",
+   "fieldtype": "HTML",
+   "label": "Stock List"
+  },
+  {
+   "fieldname": "quantity_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity Calculation"
+  },
+  {
+   "fieldname": "quantity_terjual",
+   "fieldtype": "Int",
+   "label": "Quantity Terjual"
+  },
+  {
+   "fieldname": "column_break_9mm6q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity_sisa",
+   "fieldtype": "Int",
+   "label": "Quantity Sisa"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-12 16:56:05.646250",
+ "modified_by": "Administrator",
+ "module": "Sales Force",
+ "name": "BPPB Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

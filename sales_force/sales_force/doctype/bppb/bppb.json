@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-12 16:51:40.887663",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "tanggal_berangkat",
+  "tanggal_kembali",
+  "refresh_stock",
+  "column_break_0rmu9",
+  "no_polisi",
+  "driver",
+  "nama_sales",
+  "rute",
+  "mobil",
+  "section_break_x4jtm",
+  "calculate_qty",
+  "bppb_item",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "BPPB-.YYYY.-"
+  },
+  {
+   "fieldname": "tanggal_berangkat",
+   "fieldtype": "Date",
+   "label": "Tanggal Berangkat"
+  },
+  {
+   "fieldname": "tanggal_kembali",
+   "fieldtype": "Date",
+   "label": "Tanggal Kembali"
+  },
+  {
+   "fieldname": "refresh_stock",
+   "fieldtype": "Button",
+   "label": "Refresh Stock"
+  },
+  {
+   "fieldname": "column_break_0rmu9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_polisi",
+   "fieldtype": "Data",
+   "label": "No Polisi"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Data",
+   "label": "Driver"
+  },
+  {
+   "fieldname": "nama_sales",
+   "fieldtype": "Link",
+   "label": "Nama Sales",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "rute",
+   "fieldtype": "Link",
+   "label": "Rute",
+   "options": "Rute"
+  },
+  {
+   "fieldname": "mobil",
+   "fieldtype": "Data",
+   "label": "Mobil"
+  },
+  {
+   "fieldname": "section_break_x4jtm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate_qty",
+   "fieldtype": "Button",
+   "label": "Calculate Qty"
+  },
+  {
+   "fieldname": "bppb_item",
+   "fieldtype": "Link",
+   "label": "BPPB Item",
+   "options": "BPPB Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BPPB",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-12 17:01:09.485440",
+ "modified_by": "Administrator",
+ "module": "Sales Force",
+ "name": "BPPB",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}
