@@ -1,3 +1,5 @@
+#THIS CODE IS TO ATTACH PDF DOC IN THE SALES ORDER AND SALES INVOICE EVERYTIME IT CREATED
+#THIS CODE IS BEING USE LATER TO SEND A DOCUMENT IN TELEGRAM AFTER SALES ORDER OR SALES INVOICE IS CREATED
 import frappe
 
 from frappe import _
@@ -11,7 +13,7 @@ from frappe.utils import get_files_path
 def attach_pdf(doctype, name, title):
 	doctype_folder = create_folder(_(doctype), "Home")
 	title_folder = create_folder(title, doctype_folder)
-	#title_folder = "/home/banindoerp/frappe-bench/sites/erp.banindojayamas.com/private/pdf"
+	
 	furl = get_attachment(name)
 	if furl:
 		remove_fl(furl)

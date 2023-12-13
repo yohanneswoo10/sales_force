@@ -8,6 +8,7 @@
 #                   "erpnext.sales_team.send_msg_telegram.get_telegram_update"
 #         ]
 # },
+#Please change the message url to your own url
 
 from __future__ import unicode_literals
 
@@ -138,7 +139,6 @@ def send_to_telegram():
     new_doc_name = docname + "00001"
     url = stock_pdf("Stock Report Motor", new_doc_name, "Portrait")
     message = "{}{}".format(message,url)
-    #fileurl = '/home/banindoerp/frappe-bench/sites/erpbanindo.banindojayamas.com/public/files/Stock-Report-Motor00001.pdf'
     print(message)
     try:
         response = requests.post(apiURL, json={'chat_id': chatID, 'document': message})
@@ -389,9 +389,6 @@ def get_outstanding_invoice():
     return result
 
 def stock_pdf(name, to_name, orient):
-    #pdf = erpnext.sales_team.attach_pdf.attach_pdf('Report','Stock Email Report MOTOR','Stock Motor')
-    #name = 'Stock Email Report MOTOR'
-    #to_name= 'Stock Email Report MOTOR00001'
     send_msg_telegram = frappe.get_doc('Report', name)
     
     #data = send_msg_telegram.get_report_content()
