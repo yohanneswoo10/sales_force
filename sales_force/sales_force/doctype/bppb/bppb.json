@@ -14,12 +14,12 @@
   "tanggal_kembali",
   "refresh_stock",
   "column_break_0rmu9",
-  "no_polisi",
+  "nama_sales",
   "driver",
   "column_break_bipeq",
-  "nama_sales",
   "rute",
   "mobil",
+  "no_polisi",
   "section_break_x4jtm",
   "calculate_qty",
   "bppb_item",
@@ -52,14 +52,16 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "mobil.no_polisi",
    "fieldname": "no_polisi",
    "fieldtype": "Data",
    "label": "No Polisi"
   },
   {
    "fieldname": "driver",
-   "fieldtype": "Data",
-   "label": "Driver"
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
   },
   {
    "fieldname": "nama_sales",
@@ -75,8 +77,9 @@
   },
   {
    "fieldname": "mobil",
-   "fieldtype": "Data",
-   "label": "Mobil"
+   "fieldtype": "Link",
+   "label": "Mobil",
+   "options": "Kendaraan"
   },
   {
    "fieldname": "section_break_x4jtm",
@@ -111,7 +114,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-12-12 17:12:45.285962",
+ "modified": "2023-12-13 11:15:41.762916",
  "modified_by": "Administrator",
  "module": "Sales Force",
  "name": "BPPB",
