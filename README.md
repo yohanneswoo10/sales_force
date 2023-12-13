@@ -1,6 +1,6 @@
 ## Sales Force
 
-Sales Visit Tracking
+Sales Visit Tracking and Other for Distribution company
 
 #### License
 
